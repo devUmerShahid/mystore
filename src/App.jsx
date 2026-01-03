@@ -13,6 +13,7 @@ import Profile from "./pages/Profile.jsx";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         {/* Main content area */}
         <main className="flex-grow max-w-7xl mx-auto px-4 py-6 w-full">
           <Routes>
+            
 
             {/* Home Route */}
             <Route
@@ -84,6 +86,7 @@ function App() {
         {/* Footer (Bottom) */}
         <Footer />
       </div>
+      <Analytics />
     </Router>
   );
 }
